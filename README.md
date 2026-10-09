@@ -700,3 +700,1136 @@ oidx.constraintlayout.widget.ConstraintLayout>
 
 
 
+50 заданий
+1 блок
+<img width="298" height="563" alt="image" src="https://github.com/user-attachments/assets/99da372f-d3d2-4275-bde9-8408b58f1412" />
+<!-- Задание 1. Карточка маркетплейса -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 1. Карточка маркетплейса"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:id="@+id/productImageFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E8EEFA"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_max="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerInside"
+            android:contentDescription="Изображение товара" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="8dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:background="#E53935"
+            android:text="-30%"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="Беспроводные наушники с зарядным кейсом"
+        android:textColor="#172033"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/productImageFrame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/oldPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="4 990 ₽"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:paintFlags="16"
+        app:layout_constraintTop_toBottomOf="@id/productTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/newPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="3 490 ₽"
+        android:textColor="#D32F2F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/oldPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<img width="403" height="599" alt="image" src="https://github.com/user-attachments/assets/c085833f-4adb-44c3-83cf-3cb48567ea1c" />
+<!-- Задание 2. Карточка ресторана доставки -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 2. Карточка ресторана доставки"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF">
+
+    <!-- Логотип ресторана -->
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:background="#FFF0D9"
+        android:scaleType="centerInside"
+        android:contentDescription="Логотип ресторана" />
+
+    <!-- Информация о ресторане -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burger House"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#172033"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Доставка: 25–35 мин"
+            android:textSize="14sp"
+            android:textColor="#64748B" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★"
+                android:textColor="#F59E0B"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="4.8"
+                android:textColor="#172033"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="· Бургеры"
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Кнопка избранного -->
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="♡"
+        android:textColor="#E53935"
+        android:textSize="28sp"
+        android:contentDescription="Добавить в избранное" />
+
+</LinearLayout>
+
+
+задание 3 <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="80dp"
+    android:layout_gravity="start|center_vertical"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    
+    <!-- Задание 4. Виртуальная банковская карта -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 4. Виртуальная банковская карта"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_margin="8dp"
+    android:padding="20dp"
+    android:background="@drawable/sale_gradient">
+
+    <TextView
+        android:id="@+id/bankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRADLY BANK"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cardContactless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=")))"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="••••  ••••  ••••  2048"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:letterSpacing="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cardOwner"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:id="@+id/cardOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALEX MORGAN"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/cardExpiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALID THRU  08/29"
+        android:textColor="#EDE9FE"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!-- Задание 5. Карточка профиля пользователя -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 5. Карточка профиля пользователя"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#F1F5F9">
+
+    <FrameLayout
+        android:layout_width="72dp"
+        android:layout_height="72dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:background="#DBEAFE"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Аватар пользователя" />
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/online_circle" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alex Morgan"
+            android:textColor="#0F172A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="● В сети"
+            android:textColor="#16A34A"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Люблю игры и общение"
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:text="Подписаться"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="#2563EB" />
+
+</LinearLayout>
+
+
+<!-- Задание 6. Статистика пользователя -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 6. Статистика пользователя"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#EFF6FF">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="128"
+            android:textColor="#1D4ED8"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Публикации"
+            android:textColor="#475569"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="42dp"
+        android:background="#CBD5E1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.4K"
+            android:textColor="#1D4ED8"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подписчики"
+            android:textColor="#475569"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="42dp"
+        android:background="#CBD5E1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="356"
+            android:textColor="#1D4ED8"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подписки"
+            android:textColor="#475569"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!-- Задание 7. Карточка товара с индикатором -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 7. Карточка товара с индикатором"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DBEAFE">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerInside"
+            android:contentDescription="Изображение товара" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="10dp"
+            android:padding="6dp"
+            android:text="ХИТ"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:background="#DC2626" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Беспроводные наушники"
+        android:textColor="#0F172A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="2 490 ₽"
+        android:textColor="#2563EB"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Популярность товара"
+        android:textColor="#475569"
+        android:textSize="13sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="6dp"
+        android:background="#E2E8F0">
+
+        <View
+            android:layout_width="75%"
+            android:layout_height="match_parent"
+            android:background="#2563EB" />
+    </FrameLayout>
+
+</LinearLayout>
+
+
+<!-- Задание 8. Экран настроек профиля -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 8. Экран настроек профиля"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Личная информация -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="👤"
+            android:textSize="24sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Личная информация"
+            android:textColor="#0F172A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="›"
+            android:textColor="#64748B"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E8F0" />
+
+    <!-- Уведомления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="🔔"
+            android:textSize="24sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Уведомления"
+            android:textColor="#0F172A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="›"
+            android:textColor="#64748B"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E8F0" />
+
+    <!-- Безопасность -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="🔒"
+            android:textSize="24sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Безопасность"
+            android:textColor="#0F172A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="›"
+            android:textColor="#64748B"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E8F0" />
+
+    <!-- Помощь --><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="❓"
+            android:textSize="24sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Помощь и поддержка"
+            android:textColor="#0F172A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="›"
+            android:textColor="#64748B"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!-- Задание 9. Экран чата -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 9. Экран чата"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="#F8FAFC">
+
+    <!-- Верхняя панель чата -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="#2563EB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="‹"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Алекс"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="в сети"
+                android:textColor="#DBEAFE"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Область сообщений -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:text="Привет! Как дела?"
+            android:textColor="#0F172A"
+            android:textSize="14sp"
+            android:background="#E2E8F0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:text="Привет! Всё отлично 😊"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:background="#2563EB" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:text="Поиграем вместе?"
+            android:textColor="#0F172A"
+            android:textSize="14sp"
+            android:background="#E2E8F0" />
+    </LinearLayout>
+
+    <!-- Поле ввода -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:hint="Сообщение..."
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:paddingHorizontal="12dp"
+            android:background="#F1F5F9"
+            android:inputType="textCapSentences" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:text="➤"
+            android:textColor="#2563EB"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+<img width="1918" height="814" alt="image" src="https://github.com/user-attachments/assets/bf8acb5e-01e7-4faa-8930-5a3225ae035b" />
+roid:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="14dp"
+        android:background="#CBD5E1" />
+
+    <!-- Стоимость товаров -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Товары"
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 280 ₽"
+            android:textColor="#0F172A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Доставка -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Доставка"
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250 ₽"
+            android:textColor="#0F172A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Итоговая сумма -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Итого"
+            android:textColor="#0F172A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 530 ₽"
+            android:textColor="#2563EB"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Кнопка оформления -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="Оформить заказ"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#2563EB" />
+
+</LinearLayout>
+
+<img width="1918" height="803" alt="image" src="https://github.com/user-attachments/assets/5e2df5fe-0e5c-4ff9-aa6f-5a9b15cff327" />
+<!-- Задание 11. Каталог товаров -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 11. Каталог товаров"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:background="#F8FAFC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Каталог"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="Найти товар..."
+        android:singleLine="true"
+        android:paddingHorizontal="12dp"
+        android:textSize="14sp"
+        android:background="#E2E8F0"
+        android:inputType="text" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:useDefaultMargins="true">
+
+        <!-- Товар 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="#DBEAFE"
+                android:scaleType="centerInside"
+                android:contentDescription="Кроссовки" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Кроссовки"
+                android:textColor="#0F172A"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 990 ₽"
+                android:textColor="#2563EB"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Товар 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="#F3E8FF"
+                android:scaleType="centerInside"
+                android:contentDescription="Рюкзак" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Рюкзак"
+                android:textColor="#0F172A"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 490 ₽"
+                android:textColor="#2563EB"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Товар 3 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="#DCFCE7"
+                android:scaleType="centerInside"
+                android:contentDescription="Часы" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Часы"
+                android:textColor="#0F172A"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 790 ₽"
+                android:textColor="#2563EB"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Товар 4 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="#FEF3C7"
+                android:scaleType="centerInside"
+                android:contentDescription="Наушники" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Наушники"
+                android:textColor="#0F172A"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 190 ₽"
+                android:textColor="#2563EB"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </GridLayout>
+</LinearLayout>
+
+
+
+
+
+
+
