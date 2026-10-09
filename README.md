@@ -284,7 +284,8 @@ class MainActivity : AppCompatActivity() {
 </LinearLayout>
 </ScrollView>
 
-<img width="1919" height="1033" alt="image" src="https://github.com/user-attachments/assets/39e0536e-88c6-40a1-b650-8744b8d27ca2" />
+
+
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -420,6 +421,7 @@ android:layout_width="wrap_content"
 
 </FrameLayout>
 
+<img width="1919" height="995" alt="image" src="https://github.com/user-attachments/assets/a82542be-0875-4d94-a8b1-d32261fec62a" />
 
 <!-- 4
 . RelativeLayout: относительное позиционирование --><TextV
@@ -476,6 +478,7 @@ extView
 
 tiveLayout>
 
+<img width="1907" height="1030" alt="image" src="https://github.com/user-attachments/assets/e307e006-e146-4b37-99bc-0000d0b03d84" />
 
 <andro
 idx.constraintlayout.widget.ConstraintLayout    xm
@@ -644,7 +647,8 @@ oidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </HorizontalScrollView>
 
-<img width="1911" height="997" alt="image" src="https://github.com/user-attachments/assets/0171fb64-9dcd-46b0-93e9-91e079bf3985" />
+
+
 Тема 6 
 <TextView
     android:layout_width="match_parent"
@@ -895,6 +899,7 @@ oidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
 
+<img width="1336" height="652" alt="image" src="https://github.com/user-attachments/assets/27007129-7dd8-4696-9bdb-7b29fc32a262" />
 
 задание 3 <LinearLayout
     android:layout_width="match_parent"
@@ -903,6 +908,9 @@ oidx.constraintlayout.widget.ConstraintLayout>
     android:layout_gravity="start|center_vertical"
     android:orientation="vertical"
     android:gravity="center_vertical">
+
+    
+    <img width="1917" height="706" alt="image" src="https://github.com/user-attachments/assets/7227a735-1f51-4221-aea0-9df7360fad2a" />
 
     
     <!-- Задание 4. Виртуальная банковская карта -->
@@ -978,6 +986,8 @@ oidx.constraintlayout.widget.ConstraintLayout>
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<img width="1225" height="689" alt="image" src="https://github.com/user-attachments/assets/5a845cc3-5b94-4c25-9e87-5463b4dfa367" />
 
 
 <!-- Задание 5. Карточка профиля пользователя -->
@@ -1064,6 +1074,7 @@ oidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
 
+<img width="1231" height="685" alt="image" src="https://github.com/user-attachments/assets/910f4cfb-5979-4902-ab89-d5e2afb5805e" />
 
 <!-- Задание 6. Статистика пользователя -->
 <TextView
@@ -1165,6 +1176,7 @@ oidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
 
+<img width="1447" height="673" alt="image" src="https://github.com/user-attachments/assets/bf46a616-939a-49b5-b3e4-6e8b3b1dcebb" />
 
 <!-- Задание 7. Карточка товара с индикатором -->
 <TextView
@@ -1249,6 +1261,7 @@ oidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
 
+<img width="1426" height="743" alt="image" src="https://github.com/user-attachments/assets/0931470e-e30e-4f17-8bbd-336d9e0b698b" />
 
 <!-- Задание 8. Экран настроек профиля -->
 <TextView
@@ -1412,6 +1425,7 @@ oidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
 
+<img width="1901" height="1019" alt="image" src="https://github.com/user-attachments/assets/79b450b7-e062-411b-8a28-9d9cf54fa3bc" />
 
 <!-- Задание 9. Экран чата -->
 <TextView
@@ -1544,7 +1558,127 @@ oidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
 
-<img width="1918" height="814" alt="image" src="https://github.com/user-attachments/assets/bf8acb5e-01e7-4faa-8930-5a3225ae035b" />
+<img width="1918" height="814" alt="image" src="https://github.com/user-attachments/assets/f26670a5-200b-4838-a0a9-3ea93a6ad4d8" />
+
+<!-- Задание 10. Экран оформления заказа -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Задание 10. Оформление заказа"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#172554"
+    android:padding="8dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#F8FAFC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ваш заказ"
+        android:textColor="#0F172A"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Первый товар -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="10dp"
+            android:background="#DBEAFE"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:contentDescription="Наушники" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Наушники"
+                android:textColor="#0F172A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Количество: 1"
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 490 ₽"
+            android:textColor="#0F172A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Второй товар -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="10dp"
+            android:background="#F3E8FF"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:contentDescription="Чехол" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Чехол для телефона"
+                android:textColor="#0F172A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Количество: 1"
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="790 ₽"
+            android:textColor="#0F172A"
+            and
 roid:textSize="14sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -1642,7 +1776,8 @@ roid:textSize="14sp"
 
 </LinearLayout>
 
-<img width="1918" height="803" alt="image" src="https://github.com/user-attachments/assets/5e2df5fe-0e5c-4ff9-aa6f-5a9b15cff327" />
+<img width="1918" height="803" alt="image" src="https://github.com/user-attachments/assets/b89f46dc-9887-437c-a9d8-aa1c08fdeb22" />
+
 <!-- Задание 11. Каталог товаров -->
 <TextView
     android:layout_width="match_parent"
